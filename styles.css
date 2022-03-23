@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    
+    background-color: #E8DEC5;
+    background-image: url(images/image\ 7.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 2.5rem;
+}
+.navbar__menu{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+
+    list-style: none;
+}
+.navbar__menu li{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar__menu .btn{
+    padding: .5rem 2.5rem;
+    border: 1px solid #02316F;
+    color: #02316F;
+    cursor: pointer;
+}
+
+/* hero */
+
+.hero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+    padding: 1rem 2.5rem;
+}
+.hero__ilustration{
+    position: relative;
+    
+    overflow: hidden;
+    max-width: 100%;
+    height: 600px;
+}
+.hero__ilustration img{
+    position: absolute;
+    top: -170px;
+    left: 0;
+    right: -80px;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+.content > *{
+    text-transform: uppercase;
+}
+.hero__subheader{
+    color:  #02316F;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+}
+.header-1, .header-2{
+    color: #010101;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 71px;
+}
+.header-2{
+    color: #C74138;
+}
+.content p{
+    padding-right: 1rem;
+
+    font-weight: 400;
+    line-height: 34px;
+
+    color: #7C7859;
+}
+.content div{
+    margin: 2rem 0;
+}
+.content div .btn{
+    padding: 1rem 3.5rem;
+
+
+    background-color: #C74138;
+    border: 1px solid transparent;
+
+    color: white;
+    text-decoration: none;
+}
+
+/* footer */
+
+footer{
+    padding: 2.5rem;
+}
+footer h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+
+    text-align: center;
+
+    color: #929272;
+}
